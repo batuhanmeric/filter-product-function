@@ -8,7 +8,6 @@ const Header = ({
   menu,
   cartLists,
   clearCart,
-  increase,
   decrease,
   addToCart,
 }) => {
@@ -20,7 +19,6 @@ const Header = ({
         <Minibasket
           cartLists={cartLists}
           clearCart={clearCart}
-          increase={increase}
           decrease={decrease}
           addToCart={addToCart}
         />

@@ -1,5 +1,5 @@
 import alertify from "alertifyjs";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import Card from "./Components/Card";
 import Footer from "./Components/Footer";
@@ -163,12 +163,12 @@ function App() {
     alertify.success(product.name + "  " + "added to cart!", 2);
   };
 
-  const increase = (id) => {
-    let currentItem = cartLists.find((i) => i.id === id);
-    currentItem.quantity += 1;
-    setCartLists([...cartLists]);
-    console.log(currentItem);
-  };
+  // const increase = (id) => {
+  //   let currentItem = cartLists.find((i) => i.id === id);
+  //   currentItem.quantity += 1;
+  //   setCartLists([...cartLists]);
+  //   console.log(currentItem);
+  // };
 
   // const decrease = (id) => {
   //   let currentItem = cartLists.find((i) => i.id === id);
@@ -226,7 +226,6 @@ function App() {
         menu={menu}
         cartLists={cartLists}
         clearCart={clearCart}
-        increase={increase}
         decrease={decrease}
         addToCart={addToCart}
       />

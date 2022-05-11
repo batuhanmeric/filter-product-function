@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-
 const Minibasket = ({ cartLists, clearCart, decrease, addToCart }) => {
   const totalPrice = cartLists.reduce(
     (price, item) => price + item.quantity * item.price,
