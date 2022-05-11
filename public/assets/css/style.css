@@ -2353,6 +2353,23 @@
 .card--right--title {
   font-size: 30px;
   color: #db3552;
+  cursor: pointer;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+.card--right--title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(0, 255, 0);
+  transition: width 0.25s ease-out;
+}
+.card--right--title:hover::before {
+  width: 100%;
 }
 .card--right--desc {
   display: flex;
