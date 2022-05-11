@@ -1,0 +1,22 @@
+.basket {
+  display: flex;
+  width: 400px;
+  margin-bottom: 5px;
+}
+.basket__group {
+  margin-left: 10px;
+}
+.basket__img {
+  width: 40%;
+}
+.basket__name {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #db3552;
+}
+.basket__quantity {
+  display: flex;
+  height: 40px;
+}
+
+/*# sourceMappingURL=basket.css.map */
